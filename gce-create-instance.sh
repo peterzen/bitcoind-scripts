@@ -2,7 +2,7 @@
 PROJECT_ID="prioritylane-001"
 INSTANCE_NAME="bitcoin-mainnet"
 ZONE="europe-west1-b"
-SERVICE_ACCOUNT=bitcoind-mainnet@prioritylane-001.iam.gserviceaccount.com
+SERVICE_ACCOUNT=bitcoind-mainnet@<service account ID>.iam.gserviceaccount.com
 BITCOIN_NETWORK=mainnet
 
 RPC_USER=bitcoin_rpc
