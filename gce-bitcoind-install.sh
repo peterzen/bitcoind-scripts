@@ -2,7 +2,7 @@
 
 BITCOIND_USER=bitcoin
 TOR_GROUP=debian-tor
-DATADIR_SNAPSHOT_REPO=gs://bitcoin-data.prioritylane.com
+DATADIR_SNAPSHOT_REPO=gs://<YOUR GS URL>
 
 BITCOIN_HOME=/home/$BITCOIND_USER
 BITCOIN_DATA_DIR=$BITCOIN_HOME/.bitcoin
