@@ -2,7 +2,7 @@
 
 BITCOIND_USER=bitcoin
 TOR_GROUP=debian-tor
-DATADIR_SNAPSHOT_REPO=gs://<YOUR GS URL>
+DATADIR_SNAPSHOT_REPO=gs://<YOUR GS URL>  # for fetching a snapshot of the blockchain - see below
 
 BITCOIN_HOME=/home/$BITCOIND_USER
 BITCOIN_DATA_DIR=$BITCOIN_HOME/.bitcoin
@@ -107,8 +107,8 @@ __EOF_MAINNET_CONF
 	
 fi;
 
-
-sudo gsutil -m  rsync -r  gs://bitcoin-data.prioritylane.com/$BITCOIN_NETWORK /home/bitcoin/.bitcoin
+# fetch a snapshot of the blockchain 
+# sudo gsutil -m  rsync -r  $DATADIR_SNAPSHOT_REPO/$BITCOIN_NETWORK /home/bitcoin/.bitcoin
 
 
 sudo mkdir /usr/lib/systemd/system
