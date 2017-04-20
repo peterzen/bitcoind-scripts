@@ -1,5 +1,5 @@
 
-PROJECT_ID="prioritylane-001"
+PROJECT_ID=<your GCE project ID>
 INSTANCE_NAME="bitcoin-mainnet"
 ZONE="europe-west1-b"
 SERVICE_ACCOUNT=bitcoind-mainnet@<service account ID>.iam.gserviceaccount.com
