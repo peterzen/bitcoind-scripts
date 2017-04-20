@@ -1,1 +1,1 @@
-Script for creating bitcoind instances on GCP
+Scripts for creating and provisioning bitcoind instances on Google Compute Engine
